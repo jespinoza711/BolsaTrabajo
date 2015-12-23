@@ -18,7 +18,7 @@ var users = require('./routes/users');
 var app = express();
 
 var store =  new MongoStore({
-  url:'mongodb://localhost/' + config.db,
+  url:config.mongodb.uri,
 });
 
 app.locals =  config;
