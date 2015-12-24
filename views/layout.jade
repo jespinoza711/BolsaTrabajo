@@ -1,8 +1,30 @@
 doctype html
 html
-  head
-    title= title
-    meta(name="viewport",content="width=device-width, initial-scale=1.0")
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		meta( charset='utf-8' )
+		meta( http-equiv="X-UA-Compatible", content="IE=edge" )
+		meta(name="viewport",content="width=device-width, initial-scale=1.0")
+		title=title
+		link(rel='stylesheet', href='/stylesheets/default.css')
+		link(rel='stylesheet', href='/stylesheets/layout.css')
+		link(rel='stylesheet', href='/stylesheets/media-queries.css')
+		link(rel='shortcut icon',href='favicon.png')
+	body
+		header
+			div.logo
+				a(href='#hero', class='smootscroll')
+					img(src='/images/logo.png')
+			nav#nav-wrap
+				a(href='#nav-wrap', class='mobile-btn', title='Visualizar navegacion') Visualizar Navegacion
+				a(href='#',class='mobile-btn', title='Oculta navegacion') Ocultar menu
+				ul#nav.nav
+					li: a.smoothscroll(href='#features') Features
+					li: a.smoothscroll(href='#Precios') Precios
+					li: a.smoothscroll(href='#screnshots') Screen Shots
+					li: a.smoothscroll(href="#subcribe") Subcribe
+			ul.header-social
+				li: a(href="#"): i.fa.fa-facebook
+				li: a(href="#"): i.fa.fa-twitter
+				li: a(href="#"): i.fa.fa-google-plus
+		block content
+			
