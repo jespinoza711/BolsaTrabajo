@@ -2,11 +2,14 @@ doctype html
 html
 	head
 		meta( charset='utf-8' )
+		title=title
+		meta(name='descripcion' content='')
+		meta(name='author' content='')
+
 		meta( http-equiv="X-UA-Compatible", content="IE=edge" )
 		meta(name="viewport",content="width=device-width, initial-scale=1.0")
-		title=title
-		
-		link(rel='shortcut icon',href='favicon.png')
+		link(type='image/x-icon',rel='shortcut icon',href='/favicon.png')
+		link(type='image/x-icon',rel='icon',href='/favicon.png')
 	body
 		header
 			div.logo
@@ -16,15 +19,32 @@ html
 				a(href='#nav-wrap', class='mobile-btn', title='Visualizar navegacion') Visualizar Navegacion
 				a(href='#',class='mobile-btn', title='Oculta navegacion') Ocultar menu
 				ul#nav.nav
-					li: a.smoothscroll(href='#features') Features
-					li: a.smoothscroll(href='#Precios') Precios
-					li: a.smoothscroll(href='#screnshots') Screen Shots
-					li: a.smoothscroll(href="#subcribe") Subcribe
+					li: a.smoothscroll(href='#features') Inicio
+					li: a.smoothscroll(href='#screnshots') Nosotros
+					li: a.smoothscroll(href="#subcribe") Subcribete
 			ul.header-social
 				li: a(href="#"): i.fa.fa-facebook
 				li: a(href="#"): i.fa.fa-twitter
 				li: a(href="#"): i.fa.fa-google-plus
+		//-- Home page 
+			============================================
+		section#hero
+			div.row
+				div.twelve.columns
+					div.hero-text
+						h1.responsive-headline Unete a nosotros y encuentra una manera efectiva de recibir ingresos extras!!!.
+						p
+							|Inscribite y trabaja con nostros llena tu perfil y te estaremos llamando lo mas pronto posible.
+						
+					div.buttons
+						a(href='#',class='button trial')  Unete a nosotros
+						a(href='#features',class='button learn-more smoothscroll') Aprende mas
+					div.hero-image
+						img(src='images/hero-image.png' alt='')
 		block content
-		link(rel='stylesheet', href='/stylesheets/default.css')
-		link(rel='stylesheet', href='/stylesheets/layout.css')
-		link(rel='stylesheet', href='/stylesheets/media-queries.css')
+		//-- Footer
+			==============================================
+		include footer
+link(rel='stylesheet', href='/stylesheets/default.css')
+link(rel='stylesheet', href='/stylesheets/layout.css')
+link(rel='stylesheet', href='/stylesheets/media-queries.css')
