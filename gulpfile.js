@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 	minify = require('gulp-minify-css');
 
 
-gulp.task('demo',function(){
+gulp.task('mincss',function(){
 	gulp.src('./sources/CSS/*.css')
 	.pipe(concat('default.css'))
 	.pipe(minify({compatibility: 'ie8'}))
