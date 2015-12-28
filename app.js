@@ -5,6 +5,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var config = require('./config');
 var logger = require('morgan');
+var compression = require('compression');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
@@ -18,7 +19,7 @@ var store =  new MongoStore({
 
 //Locals var
 app.locals =  config;
-
+app.use(compression());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', config.site.html.engine);

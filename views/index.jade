@@ -3,16 +3,34 @@ extends layout
 block content
 	//-- Home page 
 				============================================
-	section#hero
+	section#homepage
 		div.row
 			div.twelve.columns
-				div.hero-text
-					h1.responsive-headline Unete a nosotros y encuentra una manera efectiva de recibir ingresos extras!!!.
+				div.homepage-text
+					h1.responsive-headline Unete a nosotros y gana dinero trabajando desde tu casa, trabajo o tiempo libre.
 					p
-						|Inscribite y trabaja con nostros llena tu perfil y te estaremos llamando lo mas pronto posible.
+						|Tus áreas son Desarrollo, Ilustración y Diseño inscribite, te asignaremos proyectos y tendras ingresos desde la comodidad de tu casa.
 					
 				div.buttons
 					a(href='#',class='button trial')  Unete a nosotros
 					a(href='#features',class='button learn-more smoothscroll') Aprende mas
-				div.hero-image
-					img(src='images/hero-image.png' alt='')
+				div.homepage-image
+					img(src='images/hero-image.jpg' alt='')
+	//--Acerca de nuestros servicios
+	section#testimonials
+		div.row.content
+			span
+				i.quote-left.fa.fa-quote-left
+				div.text-container
+					div.twelve.columns
+						h1 Como trabajamos?
+					div.twelve.columns.flex-container
+						div.flexslider
+							ul.slides
+								li
+									blockquote
+										p
+											|Crea tu perfil llena tus datos con tus actitues y habilidades y nosotros nos ecargaremos de ubicarte en proyectos que mas se adecuen a tus conocimientos. Los metodos de contratación puede ser en mutuo acuerdo con usted (por prpyecto, horas, etc). El unico termino que deben cumplir es que se deben de acoplar a nuestros lineamientos de desarrollo y al acompañamiento continuo por nuestra parte en todo el proceso de desarrollo del producto.
+										cite jespinoza
+				span
+					i.quote-right.fa.fa-quote-right

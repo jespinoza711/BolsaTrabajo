@@ -8,7 +8,7 @@
    TOC:
    a. General and Common Styles
    b. Header Styles
-   c. Hero Section
+   c. homepage Section
    d. Features Section
    e. Pricing Section
    f. Screenshots Section
@@ -65,8 +65,8 @@ header {
 /* header logo */
 header .logo {
    margin-left: 36px;
-   margin-right: 20px;
-   margin-top: 15px;
+   margin-right: 10px;
+   margin-top: 10px;
    float: left;
    width: auto; 
    height:auto;
@@ -82,8 +82,8 @@ header .logo a {
 	padding: 0;
 	border: none;
 	outline: none;
-   width: 94px;
-   height: 18px;   
+   width: 124px;
+   height: 28px;   
 }
 
 /* header social */
@@ -161,10 +161,10 @@ ul#nav li.current a { color: #fff; }
 
 
 /* ------------------------------------------------------------------ */
-/* c. Hero Section
+/* c. homepage Section
 /* ------------------------------------------------------------------ */
 
-#hero {
+#homepage {
    padding-top: 66px;
    background: #23292f url(img/hero-bg.png);
    overflow: hidden;
@@ -175,59 +175,59 @@ ul#nav li.current a { color: #fff; }
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 
-	#hero { 
+	#homepage { 
 		background: #23292f url(img/hero-bg_@2X.png); 
 		background-size: 200px 200px;
 	}
   
 }
 
-#hero .row { max-width: 1040px; }
+#homepage .row { max-width: 1040px; }
 
-/* Hero Text */
-.hero-text {
+/* homepage Text */
+.homepage-text {
 	color: #676e73;
    width: 83%;
    text-align: center;
    margin: 54px auto 24px auto;
 }
-.hero-text h1 {
+.homepage-text h1 {
    font: 40px/1.2em 'montserrat-regular', sans-serif; 
    color: #fff;
    padding: 0;
    margin: 0;
    text-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
 }
-.hero-text h1 span,
-.hero-text a { color: #11ABB0; }
-.hero-text p {
+.homepage-text h1 span,
+.homepage-text a { color: #11ABB0; }
+.homepage-text p {
    font: 16px/30px 'opensans-regular', sans-serif;
    padding: 0;
    margin: 12px 8% 0;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 }
 
-/* Hero Image */
-.hero-image {
+/* homepage Image */
+.homepage-image {
    width: 100%;
    margin: 0 auto;
 }
-.hero-image img {
+.homepage-image img {
    vertical-align: bottom;
    display: block;
 }
 
-/* Hero CTA Buttons */
-#hero .buttons {
+/* homepage CTA Buttons */
+#homepage .buttons {
    text-align: center;
    margin: 0 0 18px 0;
 }
-#hero .buttons .button {
+#homepage .buttons .button {
    font: 14px/24px 'montserrat-bold', sans-serif;
    text-transform : uppercase;
    letter-spacing: 2px;
 }
-#hero .buttons .trial {
+#homepage .buttons .trial {
    background: #f64b39;
    margin-right: 30px;
 
@@ -238,8 +238,8 @@ ul#nav li.current a { color: #fff; }
    -webkit-animation-iteration-count: 3;
       -moz-animation-iteration-count: 3;  
 }
-#hero .buttons .trial:hover { background: #F86A5A; }
-#hero .buttons .learn-more {}
+#homepage .buttons .trial:hover { background: #F86A5A; }
+#homepage .buttons .learn-more {}
 
 
 /* ------------------------------------------------------------------ */
