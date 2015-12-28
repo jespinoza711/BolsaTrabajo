@@ -11,7 +11,7 @@ module.exports ={
      uri:process.env.MONGOLAB_URI || 'mongodb://localhost/BolsaTrabajo' ,
    }, 
    site: {
-    title: 'NicaLabs',
+    title: 'nicalab, te encuentra trabajo',
     lang:'es-ni',
     html: {
       engine: 'jade',
