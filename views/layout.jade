@@ -1,44 +1,58 @@
 doctype html
-html
+html(lang='es')
 	head
 		meta( charset='utf-8' )
 		title=title
-		meta(name='description' content='Somos un equipo que te ayudara a encontrar un proyecto en el que puedas trabajar desde donde tu lo desees')
-		meta(name='keywords' lang='es' content='encuentra trabajo,movil, web, desarrollo, soluciones,aplicaciones, erp,')
-		meta(name='keywords' lang='en-us' content='encuentra trabajo,movil, design, develop, soluciones,app, erp,')
-		meta(name='robots' content='index')
-		meta(name='author' content='Solutions4you')
-		meta(name='HandheldFriendly' content='True')
-		meta(name='MobileOptimized' content='380')
-		meta(name='apple-mobile-web-app-capable' content='yes')
+		meta(name='description', content='nicalab, es un equipo que ayuda a especialistas de la computación (Analistas, Desarrolladores, Diseñadores, Ilustradores, etc) a encontrar proyectos o empleos fijos, en los que puedan trabajar desde la comodidad de sus casas')
+		meta(name='keywords', lang='es', content='encuentra trabajo,movil, web, desarrollo, soluciones,aplicaciones, erp,')
+		meta(name='keywords', lang='en-us', content='encuentra trabajo,movil, design, develop, soluciones,app, erp,')
+		meta(name='robots', content='index')
+		meta(name='author', content='Solutions4you')
+		meta(name='HandheldFriendly', content='True')
+		meta(name='MobileOptimized', content='380')
+		meta(name='apple-mobile-web-app-capable', content='yes')
 		meta( http-equiv="X-UA-Compatible", content="IE=edge" )
 		meta(name="viewport",content="width=device-width, initial-scale=1.0")
-		meta(name="copyright" content="Solutions4you")
-		meta(name='')
-		meta(name="geo.region" content="NI-MN")
-		meta(name="geo.placename" content="Managua")
-		meta(name="distribution" content="global")
-		meta(name="googlebot" content="noarchive")
-		meta(name="DC.title" content="nicalab, te encuentra trabajo")
-		meta(name="geo.placename" content="Managua")
-		meta(property="og:title" content="nicalab encuentra trabajo para desarrolladores, diseñadores e ilustradores")
-		meta(description="description" content="Somos un equipo que busca trabajos para las personas que se nos subscriban.")
-		meta(property="og:site_name" content="nicalab")
-		meta(property="og:url" content="http://www.nicalab.com/")
-
-		link(type='image/x-icon',rel='shortcut icon',href='/favicon.png')
-		link(type='image/x-icon',rel='icon',href='/favicon.png')
+		meta(name="copyright", content="Solutions4you")
+		meta(name="geo.region", content="NI-MN")
+		meta(name="geo.placename", content="Managua")
+		meta(name="distribution", content="global")
+		meta(name="googlebot", content="noarchive")
+		meta(name="DC.title", content="nicalab, te encuentra trabajo")
+		meta(name="geo.placename", content="Managua")
+		meta(property="og:title", content="nicalab encuentra trabajo para desarrolladores, diseñadores e ilustradores")
+		meta(description="description", content="Somos un equipo que busca trabajos para las personas que se nos subscriban.")
+		meta(property="og:site_name", content="nicalab")
+		meta(property="og:url", content="http://nicalab.com/")
+		link(rel="canonical", href="https://nicalab.com/")
+		link(rel="apple-touch-icon", sizes="57x57", href="/apple-icon-57x57.png")
+		link(rel="apple-touch-icon", sizes="60x60", href="/apple-icon-60x60.png")
+		link(rel="apple-touch-icon",sizes="72x72", href="/apple-icon-72x72.png")
+		link(rel="apple-touch-icon", sizes="76x76", href="/apple-icon-76x76.png")
+		link(rel="apple-touch-icon", sizes="114x114", href="/apple-icon-114x114.png")
+		link(rel="apple-touch-icon", sizes="120x120", href="/apple-icon-120x120.png")
+		link(rel="apple-touch-icon" ,sizes="144x144", href="/apple-icon-144x144.png")
+		link(rel="apple-touch-icon", sizes="152x152", href="/apple-icon-152x152.png")
+		link(rel="apple-touch-icon",sizes="180x180", href="/apple-icon-180x180.png")
+		link(rel="icon", type="image/png", sizes="192x192" , href="/android-icon-192x192.png")
+		link(rel="icon", type="image/png", sizes="32x32", href="/favicon-32x32.png")
+		link(rel="icon", type="image/png", sizes="96x96", href="/favicon-96x96.png")
+		link(rel="icon", type="image/png", sizes="16x16", href="/favicon-16x16.png")
+		link(rel="manifest", href="/manifest.json")
+		meta(name="msapplication-TileColor", content="#ffffff")
+		meta(name="msapplication-TileImage", content="/ms-icon-144x144.png")
+		meta(name="theme-color", content="#ffffff")
 		include googleanalytics
 	body
 		header
 			div.logo
-				a(href='#homepage', class='smootscroll', title='Pagina Inicio nicalab')
+				a(href='#homepage', rel="canonical",class='smootscroll', title='Pagina Inicio nicalab')
 					img(src='images/nicalab.png' alt='nicalab')
 			nav#nav-wrap
-				a(href='#nav-wrap', class='mobile-btn', title='Visualizar navegacion') Visualizar Navegacion
+				a(href='#nav-wrap',  class='mobile-btn', title='Visualizar navegacion') Visualizar Navegacion
 				a(href='#',class='mobile-btn', title='Oculta navegacion') Ocultar menu
 				ul#nav.nav
-					li: a.smoothscroll(href='#homepage' title='Pagina inicio nicalab') Inicio
+					li: a.smoothscroll(href='#homepage' rel="canonical" title='Pagina inicio nicalab') Inicio
 					li: a.smoothscroll(href='#screnshots') Nosotros
 					li: a.smoothscroll(href="#subcribe") Subscribete
 			ul.header-social
