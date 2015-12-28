@@ -42,12 +42,23 @@ html(lang='es')
 		meta(name="msapplication-TileColor", content="#ffffff")
 		meta(name="msapplication-TileImage", content="/ms-icon-144x144.png")
 		meta(name="theme-color", content="#ffffff")
-		include googleanalytics
+		script(type='application/ld+json').
+			|{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"url": "http://www.nicalab.com",
+			"logo": "http://www.nicalab.com/images/nicalab.png"
+			"contactPoint" : [{
+				"@type" : "ContactPoint",
+				"Teléfono" : "+505-89-27-8125",
+				"contactType" : "customer service"
+			}
+		
 	body
 		header
 			div.logo
 				a(href='#homepage', rel="canonical",class='smootscroll', title='Pagina Inicio nicalab')
-					img(src='images/nicalab.png' alt='nicalab')
+					img(src='images/nicalab.png' alt='Logo nicalab')
 			nav#nav-wrap
 				a(href='#nav-wrap',  class='mobile-btn', title='Visualizar navegacion') Visualizar Navegacion
 				a(href='#',class='mobile-btn', title='Oculta navegacion') Ocultar menu
@@ -64,6 +75,6 @@ html(lang='es')
 		//-- Footer
 			==============================================
 		include footer
-
+		include googleanalytics
     
 link(rel='stylesheet', href='/stylesheets/default.css')
