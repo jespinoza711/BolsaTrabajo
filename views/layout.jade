@@ -6,22 +6,18 @@ html(lang='es')
 		meta(name='description', content='nicalab, es un equipo que ayuda a especialistas de la computación (Analistas, Desarrolladores, Diseñadores, Ilustradores, etc) a encontrar proyectos o empleos fijos, en los que puedan trabajar desde la comodidad de sus casas')
 		meta(name='keywords', lang='es', content='encuentra trabajo,movil, web, desarrollo, soluciones,aplicaciones, erp,')
 		meta(name='keywords', lang='en-us', content='encuentra trabajo,movil, design, develop, soluciones,app, erp,')
-		meta(name='robots', content='index')
 		meta(name='author', content='Solutions4you')
 		meta(name='HandheldFriendly', content='True')
 		meta(name='MobileOptimized', content='380')
 		meta(name='apple-mobile-web-app-capable', content='yes')
-		meta( http-equiv="X-UA-Compatible", content="IE=edge" )
+		meta(http-equiv="X-UA-Compatible", content="IE=edge" )
 		meta(name="viewport",content="width=device-width, initial-scale=1.0")
 		meta(name="copyright", content="Solutions4you")
 		meta(name="geo.region", content="NI-MN")
 		meta(name="geo.placename", content="Managua")
 		meta(name="distribution", content="global")
-		meta(name="googlebot", content="noarchive")
-		meta(name="DC.title", content="nicalab, te encuentra trabajo")
 		meta(name="geo.placename", content="Managua")
 		meta(property="og:title", content="nicalab encuentra trabajo para desarrolladores, diseñadores e ilustradores")
-		meta(description="description", content="Somos un equipo que busca trabajos para las personas que se nos subscriban.")
 		meta(property="og:site_name", content="nicalab")
 		meta(property="og:url", content="http://nicalab.com/")
 		link(rel="canonical", href="https://nicalab.com/")
@@ -58,19 +54,19 @@ html(lang='es')
 	body
 		header
 			div.logo
-				a(href='#homepage', rel="canonical",class='smootscroll', title='Pagina Inicio nicalab')
+				a(href='#homepage', rel="canonical",class='smootscroll', title='Página Inicio nicalab')
 					img(src='images/nicalab.png' alt='Logo nicalab')
 			nav#nav-wrap
 				a(href='#nav-wrap',  class='mobile-btn', title='Visualizar navegacion') Visualizar Navegacion
 				a(href='#',class='mobile-btn', title='Oculta navegacion') Ocultar menu
 				ul#nav.nav
 					li: a.smoothscroll(href='#homepage' rel="canonical" title='Pagina inicio nicalab') Inicio
-					li: a.smoothscroll(href='#screnshots') Nosotros
-					li: a.smoothscroll(href="#subcribe") Subscribete
+					li: a.smoothscroll(href='#features',rel='canonical') Aprende más
+					li: a.smoothscroll(href="#subscribe", rel='canonical') Subscribete
 			ul.header-social
 				li: a(href="#"): i.fa.fa-facebook
 				li: a(href="#"): i.fa.fa-twitter
-				li: a(href="#"): i.fa.fa-google-plus
+				li: a(href="https://plus.google.com/b/103793918954747644661/103793918954747644661?hl=es"): i.fa.fa-google-plus
 		
 		block content
 		//-- Footer

@@ -12,25 +12,36 @@ block content
 						|Tus áreas son Desarrollo, Ilustración y Diseño inscribite, te asignaremos proyectos y tendras ingresos desde la comodidad de tu casa.
 					
 				div.buttons
-					a(href='#',class='button trial')  Unete a nosotros
+					a(href='#subscribe',class='button trial')  Unete a nosotros
 					a(href='#features',class='button learn-more smoothscroll') Aprende mas
 				div.homepage-image
-					img(src='images/hero-image.jpg' alt='landpage')
+					img(src='images/landpage.png' alt='landpage')
 	//--Acerca de nuestros servicios
-	section#testimonials
-		div.row.content
-			span
-				i.quote-left.fa.fa-quote-left
-				div.text-container
-					div.twelve.columns
-						h1 Como trabajamos?
-					div.twelve.columns.flex-container
-						div.flexslider
-							ul.slides
-								li
-									blockquote
-										p
-											|Crea tu perfil llena tus datos con tus actitues y habilidades y nosotros nos ecargaremos de ubicarte en proyectos que mas se adecuen a tus conocimientos. Los metodos de contratación puede ser en mutuo acuerdo con usted (por prpyecto, horas, etc). El unico termino que deben cumplir es que se deben de acoplar a nuestros lineamientos de desarrollo y al acompañamiento continuo por nuestra parte en todo el proceso de desarrollo del producto.
-										cite jespinoza
-				span
-					i.quote-right.fa.fa-quote-right
+	section#features
+		div.row.feature.responsive
+			div.eight.columns.left
+				h3 Registrate .
+				p
+					|Crea tu perfil, define tus actitues y habilidades y nosotros nos encargaremos de ubicarte en proyectos que mas se adecuen a tus conocimientos. Los metodos de contratación puede seran estipulados en mutuo acuerdo con usted. El único termino que se debe cumplir, es seguir nuestros lineamientos de desarrollo y estar anuentes al acompañamiento continuo por nuestra parte, en todo el proceso de desarrollo del producto.
+
+			div.four.columns.feature-media.right
+				img(src="images/profile.jpg", alt="profile users")
+	//--Suscribite
+	section#subscribe
+		div.row.section-head
+			div.twelve.columns
+				h1 Formulario de registro
+				p
+					|Ingrese su correo para formar parte de nuestro grupo selecto.
+			div.row
+				div.twelve.columns
+					div#mc_embed_signup
+						form(action='#', method='post',name='mc-embedded-subscribe-form',class='validate')
+							input(type='email' value='', name='email',placeholder='correo eléctronico')
+
+							div.clear
+								input(type='submit', value='subscribite', name='subscribe',id='mc-embedded-subscribe' class='button')
+					p
+						small No compartiremos tu informaicion personal
+
+		
